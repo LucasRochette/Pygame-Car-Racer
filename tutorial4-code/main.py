@@ -204,11 +204,11 @@ def move_player(player_car):
     keys = pygame.key.get_pressed()
     moved = False
 
-    if keys[pygame.K_a]:
+    if keys[pygame.K_q]:
         player_car.rotate(left=True)
     if keys[pygame.K_d]:
         player_car.rotate(right=True)
-    if keys[pygame.K_w]:
+    if keys[pygame.K_z]:
         moved = True
         player_car.move_forward()
     if keys[pygame.K_s]:
